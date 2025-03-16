@@ -1,0 +1,10 @@
+/*Css externo do portifólio */
+/*teste de css esterno com a tag <p>*/
+p {
+    color: #170c3b;
+}
+
+img {
+    max-width: 15%;
+    max-height: 15%;
+}
