@@ -13,13 +13,13 @@
 
         <h1>Pedro Henrike Morais Caetano Mendes</h1>
         <img src="fototemporaria.jpeg" alt="pedro Henrike">
-        <p style="font-weight: bold; font-size: 18px;">desenvolvedor fullstack Phyton</p>
+        <p class="profissao">Desenvolvedor fullstack Phyton</p>
         
     </header>
         <!--Navegação-->
     <nav>
 
-    <h3>Sumário</h3>
+    <h3 class="sumario">Sumário:</h3>
 
 <ol>
     <li>Sobre</li>
@@ -53,38 +53,41 @@
         </section>
 
     </main>
-         
+
+    <form class="formulario" action="portifólio" method="get">
+
+       
+        <!--definindo qual o nome-->
+        <label for="Name">Nome</label>
+        <input type="text" id="Nome" name="Nome" required>
+
+        <!--definindo qual o email válido-->
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+
+        <!--definindo qual o assunto, com possibilidade de opções pré prontas-->
+        <label for="Assunto">Assunto:</label>
+        <select id="Assunto" name="Assunto">
+            <option value="Duvidas">Dúvidas</option>
+            <option value="Sugestao">Sugestão</option>
+            <option value="outros">outros</option>
+
+        </select>
+
+        <!--definindo qual o conteudo da mensagem a ser enviada-->
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="message" cols="50" rows="5">
+            </textarea>
+
+        <!--Botão responsável por enviar a mensagem para o destinatário-->
+        <button class="enviar-botao">Enviar</button>
+    </form>
+
     <!--rodapé-->
     <footer>
 
-        <form action="portifólio" method="get">
-
-            <!--definindo qual o nome-->
-            <label for="Name">Nome</label>
-            <input type="text" id="Nome" name="Nome" required>
-
-            <!--definindo qual o email válido-->
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" required>
-
-            <!--definindo qual o assunto, com possibilidade de opções pré prontas-->
-            <label for="Assunto">Assunto:</label>
-            <select id="Assunto" name="Assunto">
-                <option value="Duvidas">Dúvidas</option>
-                <option value="Sugestao">Sugestão</option>
-                <option value="outros">outros</option>
-
-            </select>
-
-            <!--definindo qual o conteudo da mensagem a ser enviada-->
-                <label for="msg">Mensagem</label>
-                <textarea id="msg" name="message" cols="50" rows="5">
-                </textarea>
-
-            <!--Botão responsável por enviar a mensagem para o destinatário-->
-            <button type="submit">Enviar</button>
-        </form>
         
+
 <!-- inicio do Rodapé-->
         <p>&copy;;2025 Pedro Henrike - Todos os direitos reservados</p>
         <p>conecte-se comigo:</p>
