@@ -1,11 +1,197 @@
 /*Css externo do portifólio */
-/*teste de css esterno com a tag <p>*/
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
 p {
     color: #170c3b;
+    font-size: 16px;
 }
 
 img {
     max-width: 15%;
     max-height: 15%;
     border-radius: 10%;
+}
+
+header{
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.profissao{
+    font-weight: bold;
+     font-size: 18px; 
+     color: #fff;
+}
+/*Estilização da primeira letra onde informa a profissão*/
+.profissao::first-letter{
+    font-family: roboto, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.sumario{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/*definindo o sumário(impar)*/
+li:nth-child(odd) {
+    
+    background-color: gray;
+    max-width: 30%;
+    color:white
+}
+
+/*definindo o sumário(par)*/
+li:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+    max-width: 30%;
+    
+}
+
+/*seção*/
+section{
+    padding: 20px;
+    margin-top: 10px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+article{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article a{
+    text-decoration: none;
+    font-weight: bold;
+    color:dodgerblue;
+}
+
+article a:hover{
+  color: aqua;  
+}
+
+/*container do formulário*/
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Título do formulário */
+.formulario h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilizando os labels */
+  .formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Estilizando inputs e textarea */
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilizando placeholder */
+  .formulario input::placeholder,
+  .formulario textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Efeito quando o usuário clica no campo */
+  .formulario input:focus,
+  .formulario textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+/*definindo a aparência do botão "enviar" no formulário*/
+.enviar-botao {
+    background-color: blue;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 115px;
+    height: 38px;
+    border-radius: 62px;
+}
+
+.enviar-botao:hover{
+    background-color: rgb(0, 234, 255);
+    color: white;
+}   
+
+.enviar-botao:active{
+    background-color: rgb(7, 5, 105);
+    color: white;
+}  
+
+footer label input{
+    display: flex;
+    position: center;
+    right: 20px;
+}
+
+/*definindo a aparência do rodapé*/
+footer{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f2f2f5;
+}
+
+footer a {
+    display: inline;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer a:hover{
+    color: aqua;
 }
